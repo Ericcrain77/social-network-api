@@ -29,7 +29,7 @@ const thoughtsController = {
         Thoughts.create(req.body)
             .then(({ _id }) => {
                 return Users.findOneAndUpdate(
-                    { _id: req.body.userId },
+                    { _id: req.body.usersId },
                     { $push: { thoughts: _id } },
                     { new: true }
                 );
@@ -83,13 +83,13 @@ const thoughtsController = {
 
     createReaction(req, res) {
         Thoughts.findOneAndUpdate(
-            { _id: req.params.id },
+            { _id: req.params.thoughtsId },
             { $push: { reactions: req.body } },
             { new: true, runValidators: true }
         )
             .then(dbThoughtsData => {
                 if(!dbThoughtsData) {
-                    res.status(404).json({ message: 'No user found' });
+                    res.status(404).json({ message: 'No thought found' });
                     return;
                 }
                 res.json(dbThoughtsData);
@@ -102,13 +102,13 @@ const thoughtsController = {
 
     removeReaction(req, res) {
         Thoughts.findOneAndUpdate(
-            { _id: req.params.thoughtId },
+            { _id: req.params.thoughtsId },
             { $pull: { reactions: { reactionId: req.params.reactionId } } },
             { new: true }
         )
             .then(dbThoughtsData => {
                 if(!dbThoughtsData) {
-                    res.status(404).json({ message: 'No user found' });
+                    res.status(404).json({ message: 'No thought found' });
                     return;
                 }
                 res.json(dbThoughtsData);
