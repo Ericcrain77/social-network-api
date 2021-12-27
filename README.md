@@ -22,9 +22,11 @@ I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
 
 ## Screenshots
+Get All Users
+![Get All Users](/public/assets/images/Get-All-Users.png)
 
-![]()
-
+Get All Thoughts
+![Get All Thoughts](/public/assets/images/Get-All-Thoughts.png)
 
 ## Technologies
 This application utilizes the following:
