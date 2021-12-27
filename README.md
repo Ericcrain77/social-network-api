@@ -6,6 +6,7 @@
 * [Description](#description)
 * [User Story](#user-story)
 * [Screenshots](#screenshots)
+* [Tutorial](##tutorial)
 * [Technologies](#technologies)
 * [Questions](#questions)
 
@@ -27,6 +28,9 @@ Get All Users
 
 Get All Thoughts
 ![Get All Thoughts](/public/assets/images/Get-All-Thoughts.png)
+
+## Tutorial
+[Walk-Through Tutorial hosted by Screencastify]()
 
 ## Technologies
 This application utilizes the following:
