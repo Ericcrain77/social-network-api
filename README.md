@@ -30,7 +30,7 @@ Get All Thoughts
 ![Get All Thoughts](/public/assets/images/Get-All-Thoughts.png)
 
 ## Tutorial
-[Walk-Through Tutorial hosted by Screencastify]()
+[Walk-Through Tutorial hosted by Screencastify](/public/assets/videos/Challenge-18-NoSQL-Social-Network-API.webm)
 
 ## Technologies
 This application utilizes the following:
